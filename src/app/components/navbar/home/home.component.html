@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: coral">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DJ Bank</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          
+          <!--Accounts bar-->
+          <li class="nav-item dropdown" *ngIf="loggedIn">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="user" href="Javascript.void(0)" type="submit" >Personal Info</a></li>
+            </ul>
+          </li>
+           
+          <!--Fund Transfer bar-->
+          <li class="nav-item dropdown" *ngIf="loggedIn">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Transfer
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="FundTransfer" href="Javascript.void(0)" type="submit" >Fund Transfer</a></li>
+            </ul>
+          </li>
+
+          <!--Loan bar-->
+          <li class="nav-item dropdown" *ngIf="loggedIn" >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Loan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Personal Loan</a></li>  
+            </ul>
+          </li>
+
+          <!--Invest bar-->
+          <li class="nav-item dropdown" *ngIf="loggedIn">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Invest
+            </a>
+            </li>
+            <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Fixed Deposit</a></li> </ul>
+            </ul>
+         
+        
+        <!--log in bar-->
+        <form class="d-flex">
+           <a href="Javascript.void(0)" routerLink="login" class = "btn btn-warning btn-sm" type="submit">login</a>
+        </form>
+
+        
+      </div>
+    </div>
+  </nav>

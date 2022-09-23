@@ -1,0 +1,60 @@
+<section class="h-100 h-custom" style="background-color: #1dd2a56f;">
+ <div class="h4 text-center">Personal Information</div>
+                    <div class="row pv-lg">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <form [formGroup]="updateForm" (submit)="onUpdateClick()" class="form-horizontal ng-pristine ng-valid">
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputContact1">name</label>
+                                        <input class="form-control" [readonly]="true" id="inputContact1" type="text" value="{{user.name}}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputContact2">email</label>
+                                        <input class="form-control" formControlName="email" id="inputContact2" type="email" value="{{user.email}}" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputContact3">mobile_no</label>
+                                    <input class="form-control" formControlName="mobile_no" id="inputContact3" type="text" value="{{user?.mobile_no}}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputContact4">username</label>
+                                    <input class="form-control" id="inputContact4" [readOnly]="true" type="text" value="{{user?.username}}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputContact1">gender</label>
+                                        <input class="form-control" [readonly]="true" id="inputContact1" type="text" value="{{user.gender}}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputContact6">address</label>
+                                    <input class="form-control" id="inputContact6" formControlName="address" type="text" value="{{user?.address}}" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputContact7">Account Number</label>
+                                    <input class="form-control" [readonly]="true" id="inputContact7" formControlName="account_number" type="number" value="{{user?.account_number}}" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputContact8">balance</label>
+                                    <input class="form-control"  [readonly]="true" id="inputContact8" formControlName="balance" type="number" value="{{user?.balance}}" >
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button class="btn btn-info" type="submit">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        
+            </div>
+        </div>
+   
+
+    </section>

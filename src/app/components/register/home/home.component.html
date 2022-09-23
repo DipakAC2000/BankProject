@@ -1,0 +1,79 @@
+<section class="h-100 h-custom" style="background-color: #1dd2a56f;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            <img src="../../../../assets/images/bank2.jpg" class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;" alt="Sample photo">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
+  
+              <form [formGroup]="registrationForm"  (submit)="onRegisterFormSubmit()">
+  
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1q" formControlName="name" class="form-control" name="name"/>
+                  <label class="form-label" for="form3Example1q">Name</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="form3Example1q" formControlName="username" class="form-control" name="username"/>
+                    <label class="form-label" for="form3Example1q">Username</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example1q" formControlName="email" class="form-control" name="email"/>
+                    <label class="form-label" for="form3Example1q">Email</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form3Example1q" formControlName="password" class="form-control" name="password"/>
+                    <label class="form-label" for="form3Example1q">Password</label>
+                  </div> 
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example1q" formControlName="address" class="form-control" name="address"/>
+                    <label class="form-label" for="form3Example1q">Address</label>
+                  </div> 
+                 
+                  <div >
+                    <label>Gender</label><br />
+                    <input type="radio" formControlName="gender" class="form-check-input" name="gender" value="male"> Male<br>
+                    <input type="radio" formControlName="gender" class="form-check-input" name="gender" value="female"> Female<br>
+                    <input type="radio" formControlName="gender" class="form-check-input" name="gender" value="other"> Other<br>
+                </div>
+                <br>
+                
+                
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example1q" formControlName="mobile_no" class="form-control" name="mobile_no" />
+                    <label class="form-label" for="form3Example1q">Mobile</label>
+                  </div>
+  
+                
+                  <div class="form-outline mb-4">
+                    <input type="number" id="form3Example1q" formControlName="account_number" class="form-control" name="account_number" />
+                    <label class="form-label" for="form3Example1q">Account Number</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="number" id="form3Example1q" formControlName="balance" class="form-control" name="balance" />
+                    <label class="form-label" for="form3Example1q">Account Balance</label>
+                  </div>
+  
+                  
+  
+                
+  
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  </div>
+  
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="Javascript.void(0)" routerLink="../../login" class="fw-bold text-body"><u>Login here</u></a></p>
+  
+                </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

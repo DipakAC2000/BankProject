@@ -1,0 +1,25 @@
+<section class="h-100 h-custom" style="background-color: #17c0c0bd;">
+    <div class="h4 text-center">Trnasfer money to beneficiary </div>
+        <div class="row pv-lg">
+         <div class="col-lg-2">
+            <div class="col-lg-8">
+                <form [formGroup]="fundTransferForm" (submit)="onFundTransferForm()" class="form-horizontal ng-pristine ng-valid">
+   
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputContact1">Account Number</label>
+                        <input class="form-control" formControlName="account_number" id="inputContact1" type="number" value="{{account?.account_number}}">
+                    </div>
+   
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputContact2">Balance</label>
+                        <input class="form-control" formControlName="balance" id="inputContact2" type="number" value="{{account?.balance}}" >
+                    </div>
+                    <button type="submit" class="btn btn-primary">Transfer</button>
+                </form>
+                            
+                        
+            </div>
+        </div>
+    </div>
+                
+</section>
